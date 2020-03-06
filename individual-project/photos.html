@@ -24,10 +24,43 @@
         <!-- i didn't know how to insert a search bar and navigation, so i used the code we did in class on the last homework-->
         <main>
             <h1>CitrusTV Banquet Photos</h1>
-            <img src="media/photos/banquet.jpg" alt="CitrusTV Alumni Banquet"/>
         </main>
-        <section>
+        <section class="row">
         <!--I want to add a slideshow but I don't know how without adding in CSS and Java-->
+        <!-- Slideshow container -->
+            <div class="slideshow-container">
+                <!-- Full-width images with number and caption text -->
+                <div class="myslides">
+                <div class="numbertext">1 / 3</div>
+                <img src="media/photos/slide-1.jpg" style="width:100%">
+                <div class="text">The women of the CitrusTV 2019 Executive Staff celebrate another successful banquet</div>
+                </div>
+            
+                <div class="myslides">
+                <div class="numbertext">2 / 3</div>
+                <img src="media/photos/slide-2.jpg" style="width:100%">
+                <div class="text">Three CitrusTV freshmen celebrate their first banquet</div>
+                </div>
+            
+                <div class="myslides">
+                <div class="numbertext">3 / 3</div>
+                <img src="media/photos/slide-3.jpg" style="width:100%">
+                <div class="text">Two members of the CitrusTV Executive Staff smile on the red carpet</div>
+                </div>
+            
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        <!-- I used the  example from W3Schools and added in my own photos. I will change the code around one I add in the CSS and Bootstrap-->
         </section>
         <footer>
             <!-- The footer will be orange and at the bottom. This will contain all of the contact information-->
