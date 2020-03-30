@@ -3,6 +3,7 @@
     <head>
         <title>CitrusTV Schedule</title>
         <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
     <div class="page-container">
@@ -10,12 +11,6 @@
             <!-- the body will all be  under one page container that contains all of the header and main items-->
             <div class="logo">
                 <img src="media/logos/CitrusTVLogo.png" alt="CitrusTVLogo" width="200"/>
-            </div>
-            <div class="search">
-                <input style="width: 17em; height: 3em; float: left;">
-                <div style="width: 3em; height: 3em; background-color: #ccc; float: right; padding: 0 1em; text-align: center;">
-                <i class="fa fa-search"></i>
-                </div>
             </div>
         </header>
         <nav>
@@ -26,13 +21,13 @@
         </nav>
         <!-- i didn't know how to insert a search bar and navigation, so i used the code we did in class on the last homework-->
         <main>
-            <img src="media/photos/50th.png" alt="CitrusTV 50th anniversary logo"/>
-            <h1>CitrusTV 50th Anniversary Alumni Weekend</h1>
+            <img src="media/photos/50th.png" alt="CitrusTV 50th anniversary logo" width="100%" />
+            <h1>Alumni Weekend</h1>
         </main>
         <section class="row">
             <!--This section will contain the google calendar. I chose to use a google calendar because then page visitors can add it to their own personal calendars. This also allows for instant updates-->
             <h2>Schedule</h2>
-            <iframe src="https://calendar.google.com/calendar/embed?src=c2f2cffcj3i7uufchm57m354vc%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+            <iframe src="https://calendar.google.com/calendar/embed?src=c2f2cffcj3i7uufchm57m354vc%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
         </section>
         <section class="row">
             <h2>List of Events</h2>
@@ -44,7 +39,7 @@
                     <div style="display:flex;">
                         <img src="media/photos/newsevent.jpg" alt="CitrusTV News Live at 6" width="500"/>
                         <!--I'll insert an actual image from the event here-->
-                        <p>Join us on Friday April 3rd at 6:00pm for our News Live at 6 show!</p>
+                        <p style="padding: 10px; word-wrap: normal;">Join us on Friday April 3rd at 6:00pm for our News Live at 6 show!</p>
                     </div>
                 </div>
                 <div class="event">
@@ -54,7 +49,7 @@
                     <div style="display:flex;">
                         <img src="media/photos/alumni.jpeg" alt="CitrusTV Alumni Panel" width="500"/>
                         <!--I'll insert an actual image from the event here-->
-                        <p>Join us on Saturday April 4th for our Alumni Panel! Alumni work in various different media organizations and the panel will feature our keynote speaker Matthew Berry</p>
+                        <p style="padding: 10px; word-wrap: normal;">Join us on Saturday April 4th for our Alumni Panel! Alumni work in various different media organizations and the panel will feature our keynote speaker Matthew Berry</p>
                     </div>
                 </div>
                 <div class="event">
@@ -64,23 +59,24 @@
                     <div style="display:flex;">
                         <img src="media/photos/banquet.jpg" alt="CitrusTV Alumni Banquet" width="500"/>
                         <!--I'll insert an actual image from the event here-->
-                        <p>Join us on Saturday April 4th for our Alumni Banquet! The banquet will feature awards, food, and so much more!</p>
+                        <p style="padding: 10px; word-wrap: normal;">Join us on Saturday April 4th for our Alumni Banquet! The banquet will feature awards, food, and so much more!</p>
                     </div>
                 </div>
             </section> 
         </section>
-    <footer>
-        <!-- The footer will be orange and at the bottom. This will contain all of the contact information-->
-        <h4>Contact Us</h4>
-        <p>
-            <!-- I don't know how to insert breaks so this looks like an address ALSO how do I link social media?-->
-            CitrusTV
-            Robert B. Menschel Media Center
-            316 Waverly Ave.
-            Syracuse, NY 13244-3010
-            Office Phone: 315.443.2041 | Newsroom: 315.443.1177
-        </p>
-    </footer>
+        <footer>
+            <!-- The footer will be orange and at the bottom. This will contain all of the contact information-->
+            <h4 style="color: white; font-size: 20px;">Contact Us</h4>
+            <p style="padding: 10px;"> 
+                CitrusTV
+                <br>Robert B. Menschel Media Center
+                <br>316 Waverly Ave.
+                <br>Syracuse, NY 13244-3010
+                <br>Office Phone: 315.443.2041 | Newsroom: 315.443.1177
+            </p>
+            <a href="https://www.facebook.com/citrustv/" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/citrustv/?hl=en" class="fa fa-instagram"></a>
+        </footer>
     </div>
     </body>
     

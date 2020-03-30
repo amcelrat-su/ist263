@@ -3,6 +3,7 @@
     <head>
         <title>CitrusTV Banquet Photos</title>
         <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
     <div class="page-container">
@@ -10,12 +11,6 @@
             <!-- the body will all be  under one page container that contains all of the header and main items-->
             <div class="logo">
                 <img src="media/logos/CitrusTVLogo.png" alt="CitrusTVLogo" width="200"/>
-            </div>
-            <div class="search">
-                <input style="width: 17em; height: 3em; float: left;">
-                <div style="width: 3em; height: 3em; background-color: #ccc; float: right; padding: 0 1em; text-align: center;">
-                <i class="fa fa-search"></i>
-                </div>
             </div>
         </header>
         <nav>
@@ -26,58 +21,73 @@
         </nav>
         <!-- i didn't know how to insert a search bar and navigation, so i used the code we did in class on the last homework-->
         <main>
-        <section class="row">  
-        <h1>CitrusTV Banquet Photos</h1>
-        <!--I want to add a slideshow but I don't know how without adding in CSS and Java-->
+        <section class="row" style="background: #90c090;">  
+        <h1>Banquet Photos</h1>
+        <!--I used my a website to help me create a more interesting photo page then a slider-->
         <!-- Slideshow container -->
-            <div class="slideshow-container">
-                <!-- Full-width images with number and caption text -->
-                <div class="myslides">
-                <div class="numbertext">1 / 3</div>
-                <img src="media/photos/slide-1.jpg" alt="CitrusTV Executive Staff Women" style="width:100%">
-                <div class="text">The women of the CitrusTV 2019 Executive Staff celebrate another successful banquet</div>
-                </div>
+        <script src="https://cdn.jsdelivr.net/npm/publicalbum@latest/embed-ui.min.js" async></script>
+        <div id="columns">
+            <figure>
+            <img src="media/photos/slide-1.jpg" alt="Women on the CitrusTV Executive Staff"/>
+              <figcaption>The women of the CitrusTV Executive Staff</figcaption>
+              </figure>
+              
+              <figure>
+              <img src="media/photos/slide-2.jpg" alt="CitrusTV Freshmen attend their first banquet"/>
+              <figcaption>CitrusTV Freshmen attend their first banquet</figcaption>
+              </figure>
+              
+            <figure>
+              <img src="media/photos/slide-3.jpg" alt="Former AGM Lilia Wood celebrates with the current AGM Amber McElrath"/>
+              <figcaption>Former AGM Lilia Wood celebrates with the current AGM Amber McElrath</figcaption>
+              </figure>
             
-                <div class="myslides">
-                <div class="numbertext">2 / 3</div>
-                <img src="media/photos/slide-2.jpg" alt="CitrusTV Members" style="width:100%">
-                <div class="text">Three CitrusTV freshmen celebrate their first banquet</div>
-                </div>
+              <figure>
+              <img src="media/photos/slide-4.jpg" alt="CitrusTV Members get ready to party">
+              <figcaption>Some CitrusTV members get ready to party</figcaption>
+              </figure>
+              
+             <figure>
+               <img src="media/photos/slide-5.jpg" alt="Best friends Julia and Lilly pose for the camera">
+              <figcaption>Best friends Julia and Lilly pose for the camera</figcaption>
+              </figure>
+              
+             <figure>
+               <img src="media/photos/slide-6.jpg" alt="News Director Greg Bradbury presents the best CitrusTV Live at 6  Award">
+              <figcaption>News Director Greg Bradbury presents the best CitrusTV Live at 6 Award</figcaption>
+              </figure>
             
-                <div class="myslides">
-                <div class="numbertext">3 / 3</div>
-                <img src="media/photos/slide-3.jpg" alt="CitrusTV AGMs" style="width:100%">
-                <div class="text">Two members of the CitrusTV Executive Staff smile on the red carpet</div>
-                </div>
+              <figure>
+              <img src="media/photos/slide-7.jpg" alt="Alex King celebrates with her mentor Toni Bianco">
+              <figcaption>Alex King celebrates with her mentor Toni Bianco</figcaption>
+              </figure>	
             
-                <!-- Next and previous buttons -->
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
-            <br>
+             <figure>
+              <img src="media/photos/slide-8.jpg" alt="The former General Manager and AGM present alumi Matthew Berry with a hall of fame plaque">
+              <figcaption>The former General Manager and AGM present alumi Matthew Berry with a hall of fame plaque</figcaption>
+              </figure>
             
-            <!-- The dots/circles -->
-            <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-            </div>
-        <!-- I used the  example from W3Schools and added in my own photos. I will change the code around one I add in the CSS and Bootstrap-->
+              <figure>
+              <img src="media/photos/slide-9.jpg"  alt="Freshman Liam Crowley wins Entertainment Rookie of the Year">
+              <figcaption>Freshman Liam Crowley wins Entertainment Rookie of the Year</figcaption>
+            </figure>
+            </div>     
+        <!-- I followed along with the code on another website and a youtube video to create these polaroid style images. I know you recommended I do something other than a slider.-->
         </section>
         </main>
         <footer>
             <!-- The footer will be orange and at the bottom. This will contain all of the contact information-->
-            <h4>Contact Us</h4>
-            <p>
-                <!-- I don't know how to insert breaks so this looks like an address ALSO how do I link social media?-->
+            <h4 style="color: white; font-size: 20px;">Contact Us</h4>
+            <p style="padding: 10px;"> 
                 CitrusTV
-                Robert B. Menschel Media Center
-                316 Waverly Ave.
-                Syracuse, NY 13244-3010
-                Office Phone: 315.443.2041 | Newsroom: 315.443.1177
+                <br>Robert B. Menschel Media Center
+                <br>316 Waverly Ave.
+                <br>Syracuse, NY 13244-3010
+                <br>Office Phone: 315.443.2041 | Newsroom: 315.443.1177
             </p>
+            <a href="https://www.facebook.com/citrustv/" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/citrustv/?hl=en" class="fa fa-instagram"></a>
         </footer>
-    
     </div>
     </body>
 </html>

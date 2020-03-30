@@ -3,6 +3,7 @@
     <head>
         <title>CitrusTV About Us</title>
         <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
     <div class="page-container">
@@ -11,12 +12,6 @@
             <div class="logo">
                 <img src="media/logos/CitrusTVLogo.png" alt="CitrusTVLogo" width="200"/>
             </div>
-            <div class="search">
-                <input style="width: 17em; height: 3em; float: left;">
-                <div style="width: 3em; height: 3em; background-color: #ccc; float: right; padding: 0 1em; text-align: center;">
-                <i class="fa fa-search"></i>
-                </div>
-            </div>
         </header>
         <nav>
             <i class="fa fa-home"></i>
@@ -24,16 +19,14 @@
             <a href="https://amcelrat-su.github.io/ist263/individual-project/schedule.html">Schedule</a>
             <a href="https://amcelrat-su.github.io/ist263/individual-project/photos.html">Photos</a>
         </nav>
-        <!-- i didn't know how to insert a search bar and navigation, so i used the code we did in class on the last homework-->
         <main>
-            <img src="media/photos/studio.jpg" alt="CitrusTV Studio"/>
+            <img src="media/photos/studio.jpg" alt="CitrusTV Studio" width="100%"/>
             <h1>About CitrusTV</h1>
-        <!-- the text will lay on top of an image of CitrusTV studio/members. Do I do this in CSS or HTML?-->
-        </main>
+        </main>  
         <section class="row">
         <!-- I gave all of the sections the "row" class because I want all of the rows to have the same dimensions and formatting-->
             <h2>Description</h2>
-            <p>
+            <p style="padding: 10px;  margin: 1em; background-color: #4367b5; color: white;">
                 CitrusTV is Syracuse University's entirely student-run TV studio, open to all majors with any level of   experience at SU or SUNY-ESF. 
 
                 All the content broadcast by CitrusTV is written, directed, edited and produced entirely by students. The studio's promotions, advertising, finances, engineering, computer systems, operations and event planning are also all managed by volunteer students. 
@@ -91,6 +84,9 @@
                         </ul>
                     </div>
                 </div>
+            </section>
+            <section class="row" style="display: flex;">
+                <!-- this is the second row in the section-->
                 <div class="exec">
                     <div>
                         <img src="media/exec/news-director.png" alt="News Director at CitrusTV" width="200"/>
@@ -105,9 +101,6 @@
                         </ul>
                     </div>
                 </div>
-            </section>
-            <section class="row" style="display: flex;">
-                <!-- this is the second row in the section-->
                 <div class="exec">
                     <div>
                         <img src="media/exec/sports-director.png" alt="Sports Director at CitrusTV" width="200"/>
@@ -136,6 +129,9 @@
                         </ul>
                     </div>
                 </div>
+            </section>
+            <section class="row" style="display: flex;">
+                <!-- this is the third row in the section-->
                 <div class="exec">
                     <div>
                         <img src="media/exec/digital-director.png" alt="Web and Digital Media Director at CitrusTV" width="200"/>
@@ -164,9 +160,6 @@
                         </ul>
                     </div>
                 </div>
-            </section>
-            <section class="row" style="display: flex;">
-                <!-- this is the third row in the section-->
                 <div class="exec">
                     <div>
                         <img src="media/exec/alumni-relations.png" alt="Alumni Relations Director at CitrusTV" width="200"/>
@@ -181,6 +174,9 @@
                         </ul>
                     </div>
                 </div>
+            </section>
+            <section class="row" style="display: flex;">
+                <!-- this is the third row in the section-->
                 <div class="exec">
                     <div>
                         <img src="media/exec/promotions-director.png" alt="Promotions Director at CitrusTV" width="200"/>
@@ -209,54 +205,66 @@
                         </ul>
                     </div>
                 </div>
+                <div class="exec">
+                    <div>
+                        <img src="media/exec/chief-engineer.jpg" alt="Chief Engineer at CitrusTV" width="200"/>
+                    </div>
+                    <div>
+                        <h3>Cal Parker</h3>
+                        <h4>Chief Engineer</h4>
+                        <ul>
+                            <li>cparker@citrustv.net</li>
+                            <li>Class of 2021</li>
+                            <li>Hometown: Groton, MA</li>
+                        </ul>
+                    </div>
+                </div>
             </section>
         </section>
         <section class="row">
             <!-- this starts the second entire section of the page-->
-        <h2>Check Out Our Coverage</h2>
-            <section class="row" style="display: flex;">
+        <h2><a href="https://www.youtube.com/user/CitrusTV">Check Out Our Coverage</a></h2>
+            <section class="row" style="display:flex; background: #90c090">
                 <div class="coverage">
                     <div>
-                        <h3>News Department</h3>
-                        <img src="media/photos/news.jpg" alt="News Department" width="200"/>
+                        <img src="media/photos/news.jpg" alt="News Department" width="400"/>
                         <!--I also want to make it so the images lead to the youtube page-->
                     </div>
                     <div>
-                        <a class="twitter-timeline" data-width="300" data-height="1000" data-theme="light" href="https://twitter.com/CitrusTVNews?ref_src=twsrc%5Etfw">Tweets by CitrusTVNews</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        <a class="twitter-timeline" data-width="400" data-height="500" data-theme="light" href="https://twitter.com/CitrusTVNews?ref_src=twsrc%5Etfw">Tweets by CitrusTVNews</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                     </div>
                 </div>
                 <div class="coverage">
                     <div>
-                        <h3>Sports Department</h3>
-                        <img src="media/photos/sports.jpg" alt="Sports Department" width="200"/>
+                        <img src="media/photos/sports.jpg" alt="Sports Department" width="400"/>
                     </div>
                     <div>
-                        <a class="twitter-timeline" data-width="300" data-height="1000" data-theme="light" href="https://twitter.com/CitrusTVSports?ref_src=twsrc%5Etfw">Tweets by CitrusTVSports</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        <a class="twitter-timeline" data-width="400" data-height="500" data-theme="light" href="https://twitter.com/CitrusTVSports?ref_src=twsrc%5Etfw">Tweets by CitrusTVSports</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                     </div>
                 </div>
                 <div class="coverage">
                     <div>
-                        <h3>Entertainment Department</h3>
-                        <img src="media/photos/entertainment.jpg" alt="Entertainment Department" width="200"/>
+                        <img src="media/photos/entertainment.jpg" alt="Entertainment Department" width="400"/>
                     </div>
                     <div>
-                        <a class="twitter-timeline" data-width="300" data-height="1000" data-theme="light" href="https://twitter.com/CitrusTVE?ref_src=twsrc%5Etfw">Tweets by CitrusTVE</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        <a class="twitter-timeline" data-width="400" data-height="500" data-theme="light" href="https://twitter.com/CitrusTVE?ref_src=twsrc%5Etfw">Tweets by CitrusTVE</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                     </div>
                 </div>
             </section>
-        </section>  
-    </div>
+        </section>
     <footer>
         <!-- The footer will be orange and at the bottom. This will contain all of the contact information-->
-        <h4>Contact Us</h4>
-        <p>
-            <!-- I don't know how to insert breaks so this looks like an address ALSO how do I link social media?-->
+        <h4 style="color: white; font-size: 20px;">Contact Us</h4>
+        <p style="padding: 10px;"> 
             CitrusTV
-            Robert B. Menschel Media Center
-            316 Waverly Ave.
-            Syracuse, NY 13244-3010
-            Office Phone: 315.443.2041 | Newsroom: 315.443.1177
+            <br>Robert B. Menschel Media Center
+            <br>316 Waverly Ave.
+            <br>Syracuse, NY 13244-3010
+            <br>Office Phone: 315.443.2041 | Newsroom: 315.443.1177
         </p>
+        <a href="https://www.facebook.com/citrustv/" class="fa fa-facebook"></a>
+        <a href="https://www.instagram.com/citrustv/?hl=en" class="fa fa-instagram"></a>
     </footer>
+    </div>
     </body>
 </html>
