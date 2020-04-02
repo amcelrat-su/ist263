@@ -1,73 +1,151 @@
-h1{
-    font-size: 30px;
-    color: white;
+div.page-container{
+    font-family: sans-serif;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0;
+}
+header{
+    background: #add8e6;
+}
+header::after{
+    content:'';
+    display: table;
+    clear: both;
+}
+img.logo{
+    float: left;
     padding: 10px;
-    background: #f38840;
-    width: fit-content;
+}
+nav{
+    float: right;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav li{
+    display: inline-block;
+    margin: 0 35px;
+    padding-top: 23px;
+    position: relative;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+nav a:hover{
+    color: #000000
+}
+nav a::before{
+    content:'';
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+nav a:hover::before{
+    width: 100%;
+}
+h1{
+    font-size: 25px;
+    color: black;
 }
 h2{
     font-size: 20px;
-    color: #0098ec;
-    padding: 10px;
+    color: black;
+    background: white;
+    width: fit-content;
+    padding-right: 20px;
+    font-style: italic;
+}
+div.head2{
+    background: #add8e6;
+    margin: 2em 1em;
 }
 h3{
     font-size: 18px;
-    padding: 10px;
+    font-weight: 600;
 }
 h4{
     font-size: 15px;
-    color: #90c090;
+    font-style: italic;
+    font-weight: normal;
+}
+div.main-image{
+    width: 65%;
+    margin: 1em;
     padding: 10px;
+    background: #fda172;
+}
+img.main-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+div.about{
+    width: 35%;
+    margin: 1em;
+    padding: 20px;
+    border: 5px;
+    border-style: solid;
+    border-color: #fda172; 
+}
+div.about p{
+    text-align: center;
 }
 div.exec{
-    padding: 10px;
+    padding: 15px;
     width: 100%;
-    font-size: 15px;
     word-wrap: normal;
-    display: flex;
-    background-color: rgb(240, 238, 238);
+}
+div.exec-img{
+    width: 100%;
+}
+div.exec-text{
+    width: 100%;
+    word-wrap: normal;
+    text-align: center;
+}
+div.exec-text ul{
+    list-style-type:none;
+    padding: 10px;
+}
+div.exec-text p{
+    background: #add8e6;
+    padding: 10px;
+}
+div.exec-text a{
+    text-decoration: none;
+    color: black;
+}
+div.head2-coverage{
+    background: #fda172;
+    margin-top: 3em;
     margin: 1em;
 }
 div.coverage{
-    padding: 10px;
+    width: 100%;
+    padding: 20px;
     margin: 1em;
+}
+div.coverage-img{
     width: 100%;
 }
-div.page-container{
-    font-family: sans-serif;
-    width:100%;
-    margin: 0 auto; 
-    padding: 0;
-    align-items: center;
-}
-header{
-    height: 6em; 
-    margin: 1em 0; 
-    padding: 0;
-    color: white;
-}
-div.logo {
-    margin: 1em;
-    width: 4em; 
-    height: 4em;
-    float: left;
-}
-nav{
-    height: 25px; 
-    margin: 1em 0em; 
-    padding: 10px 0 10px 10px; 
-    background-color: rgb(240, 238, 238); 
-    font-size: 20px;
-    color:  #4367b5;
-}
-ul{
-    list-style-type:none;
-    padding-left: 10px;
+div.coverage-twitter{
+    width: 100%;
 }
 footer{
     padding: 10px;
-    background:#f38840;
-    color: white;
+    margin-top: 3em;
+    background:#fda172;
+    display: flex;
 }
 div.event{
     padding: 10px;
