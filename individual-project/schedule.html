@@ -4,40 +4,63 @@
         <title>CitrusTV Schedule</title>
         <link rel="stylesheet" type="text/css" href="style.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
     </head>
     <body>
     <div class="page-container">
         <header>
             <!-- the body will all be  under one page container that contains all of the header and main items-->
-            <div class="logo">
-                <img src="media/logos/CitrusTVLogo.png" alt="CitrusTVLogo" width="200"/>
-            </div>
+            <img class="logo" src="media/logos/CitrusTVLogo.png" alt="CitrusTVLogo" width="150"/>
+            <nav>
+                <ul>
+                    <li><a href="https://amcelrat-su.github.io/ist263/individual-project/about-us.html">Home</a></li>
+                    <li><a href="https://amcelrat-su.github.io/ist263/individual-project/schedule.html">Schedule</a></li>
+                    <li><a href="https://amcelrat-su.github.io/ist263/individual-project/photos.html">Photos</a></li>
+                </ul>
+            </nav>
         </header>
-        <nav>
-            <i class="fa fa-home"></i>
-            <a href="https://amcelrat-su.github.io/ist263/individual-project/about-us.html">Home</a>
-            <a href="https://amcelrat-su.github.io/ist263/individual-project/schedule.html">Schedule</a>
-            <a href="https://amcelrat-su.github.io/ist263/individual-project/photos.html">Photos</a>
-        </nav>
-        <!-- i didn't know how to insert a search bar and navigation, so i used the code we did in class on the last homework-->
         <main>
-            <img src="media/photos/50th.png" alt="CitrusTV 50th anniversary logo" width="100%" />
             <h1>Alumni Weekend</h1>
+            <img src="media/photos/50th.png" alt="CitrusTV 50th anniversary logo" width="100%" />
         </main>
         <section class="row">
-            <!--This section will contain the google calendar. I chose to use a google calendar because then page visitors can add it to their own personal calendars. This also allows for instant updates-->
+            <div class="head2">
             <h2>Schedule</h2>
-            <iframe src="https://calendar.google.com/calendar/embed?src=c2f2cffcj3i7uufchm57m354vc%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+            </div>    
+        </section>
+        <section class="row" style="display: flex; width: 100%;">
+            <div class="schedule">
+                <h3>April 3rd</h3>
+                <ul>
+                    <li><i><b>6:00 pm</b></i> | News Live at 6 Show</li>
+                </ul>
+            </div>
+            <div class="schedule">
+                <h3>April 4th</h3>
+                <ul>
+                    <li><i><b>Noon</b></i> | Brunch</li>
+                    <li><i><b>2:00 pm</b></i> | Alumni Panel</li>
+                    <li><i><b>7:00 pm</b></i> | 50th Anniversary Banquet</li>
+                </ul>
+            </div>
+            <div class="schedule">
+                <h3>April 5th</h3>
+                <ul>
+                    <li><i><b>Noon</b></i> | Sign the alumni wall!</li>
+                </ul>
+            </div>
         </section>
         <section class="row">
+            <div class="head2-coverage">
             <h2>List of Events</h2>
-            <section class="row">
+            </div>
+            <section class="row" style="display:flex;">
                 <div class="event">
                     <div>
                       <h3>News Live at 6</h3>  
                     </div>
-                    <div style="display:flex;">
-                        <img src="media/photos/newsevent.jpg" alt="CitrusTV News Live at 6" width="500"/>
+                    <div>
+                        <img src="media/photos/newsevent.jpg" alt="CitrusTV News Live at 6" style="width: 100%; height: 100%; object-fit: cover;"/>
                         <!--I'll insert an actual image from the event here-->
                         <p style="padding: 10px; word-wrap: normal;">Join us on Friday April 3rd at 6:00pm for our News Live at 6 show!</p>
                     </div>
@@ -46,8 +69,8 @@
                     <div>
                       <h3>Alumni Panel</h3>  
                     </div>
-                    <div style="display:flex;">
-                        <img src="media/photos/alumni.jpeg" alt="CitrusTV Alumni Panel" width="500"/>
+                    <div>
+                        <img src="media/photos/alumni.jpeg" alt="CitrusTV Alumni Panel" style="width: 100%; height: 100%; object-fit: cover;"/>
                         <!--I'll insert an actual image from the event here-->
                         <p style="padding: 10px; word-wrap: normal;">Join us on Saturday April 4th for our Alumni Panel! Alumni work in various different media organizations and the panel will feature our keynote speaker Matthew Berry</p>
                     </div>
@@ -56,8 +79,8 @@
                     <div>
                       <h3>Alumni Banquet</h3>  
                     </div>
-                    <div style="display:flex;">
-                        <img src="media/photos/banquet.jpg" alt="CitrusTV Alumni Banquet" width="500"/>
+                    <div>
+                        <img src="media/photos/banquet.jpg" alt="CitrusTV Alumni Banquet" style="width: 100%; height: 100%; object-fit: cover;"/>
                         <!--I'll insert an actual image from the event here-->
                         <p style="padding: 10px; word-wrap: normal;">Join us on Saturday April 4th for our Alumni Banquet! The banquet will feature awards, food, and so much more!</p>
                     </div>
@@ -66,7 +89,8 @@
         </section>
         <footer>
             <!-- The footer will be orange and at the bottom. This will contain all of the contact information-->
-            <h4 style="color: white; font-size: 20px;">Contact Us</h4>
+        <div style="width: 80%;">
+            <h2 style="background: #fda172;">Contact Us</h2>        
             <p style="padding: 10px;"> 
                 CitrusTV
                 <br>Robert B. Menschel Media Center
@@ -74,8 +98,12 @@
                 <br>Syracuse, NY 13244-3010
                 <br>Office Phone: 315.443.2041 | Newsroom: 315.443.1177
             </p>
-            <a href="https://www.facebook.com/citrustv/" class="fa fa-facebook"></a>
-            <a href="https://www.instagram.com/citrustv/?hl=en" class="fa fa-instagram"></a>
+            <a href="https://www.facebook.com/citrustv/" class="fa fa-facebook" style="text-decoration: none; color: black;"></a>
+            <a href="https://www.instagram.com/citrustv/?hl=en" class="fa fa-instagram" style="text-decoration: none; color: black;"></a>
+        </div>
+        <div style="width: 20%;">
+            <img class="footer" src="media/logos/footer.png" width="200" alt="CitrusTVLogo">
+        </div>
         </footer>
     </div>
     </body>

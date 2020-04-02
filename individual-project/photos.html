@@ -4,25 +4,27 @@
         <title>CitrusTV Banquet Photos</title>
         <link rel="stylesheet" type="text/css" href="style.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
     </head>
     <body>
     <div class="page-container">
         <header>
             <!-- the body will all be  under one page container that contains all of the header and main items-->
-            <div class="logo">
-                <img src="media/logos/CitrusTVLogo.png" alt="CitrusTVLogo" width="200"/>
-            </div>
+            <img class="logo" src="media/logos/CitrusTVLogo.png" alt="CitrusTVLogo" width="150"/>
+            <nav>
+                <ul>
+                    <li><a href="https://amcelrat-su.github.io/ist263/individual-project/about-us.html">Home</a></li>
+                    <li><a href="https://amcelrat-su.github.io/ist263/individual-project/schedule.html">Schedule</a></li>
+                    <li><a href="https://amcelrat-su.github.io/ist263/individual-project/photos.html">Photos</a></li>
+                </ul>
+            </nav>
         </header>
-        <nav>
-            <i class="fa fa-home"></i>
-            <a href="https://amcelrat-su.github.io/ist263/individual-project/about-us.html">Home</a>
-            <a href="https://amcelrat-su.github.io/ist263/individual-project/schedule.html">Schedule</a>
-            <a href="https://amcelrat-su.github.io/ist263/individual-project/photos.html">Photos</a>
-        </nav>
         <!-- i didn't know how to insert a search bar and navigation, so i used the code we did in class on the last homework-->
         <main>
-        <section class="row" style="background: #90c090;">  
-        <h1>Banquet Photos</h1>
+        <section class="row"> 
+        <div class="head2-coverage">
+        <h1 style="background: white; width: fit-content; padding-right: 10px;">Banquet Photos</h1>
+        </div> 
         <!--I used my a website to help me create a more interesting photo page then a slider-->
         <!-- Slideshow container -->
         <script src="https://cdn.jsdelivr.net/npm/publicalbum@latest/embed-ui.min.js" async></script>
@@ -77,7 +79,8 @@
         </main>
         <footer>
             <!-- The footer will be orange and at the bottom. This will contain all of the contact information-->
-            <h4 style="color: white; font-size: 20px;">Contact Us</h4>
+        <div style="width: 80%;">
+            <h2 style="background: #fda172;">Contact Us</h2>        
             <p style="padding: 10px;"> 
                 CitrusTV
                 <br>Robert B. Menschel Media Center
@@ -85,8 +88,12 @@
                 <br>Syracuse, NY 13244-3010
                 <br>Office Phone: 315.443.2041 | Newsroom: 315.443.1177
             </p>
-            <a href="https://www.facebook.com/citrustv/" class="fa fa-facebook"></a>
-            <a href="https://www.instagram.com/citrustv/?hl=en" class="fa fa-instagram"></a>
+            <a href="https://www.facebook.com/citrustv/" class="fa fa-facebook" style="text-decoration: none; color: black;"></a>
+            <a href="https://www.instagram.com/citrustv/?hl=en" class="fa fa-instagram" style="text-decoration: none; color: black;"></a>
+        </div>
+        <div style="width: 20%;">
+            <img class="footer" src="media/logos/footer.png" width="200" alt="CitrusTVLogo">
+        </div>
         </footer>
     </div>
     </body>
