@@ -4,7 +4,9 @@
         <title>CitrusTV About Us</title>
         <link rel="stylesheet" type="text/css" href="style.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Farsan&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     </head>
     <body>
     <div class="page-container">
@@ -19,213 +21,243 @@
                 </ul>
             </nav>
         </header>
-        <main style="display: flex;">
-            <div class="main-image">
-                <img class="main-image" src="media/photos/studio.jpg" alt="CitrusTV Studio" /> 
-            </div>
-             <div class="about">
-                <h1 style="text-align: center;">About CitrusTV</h1>
-                <p>
-                CitrusTV is Syracuse University's entirely student-run TV studio, open to all majors with any level of   experience at SU or SUNY-ESF. 
-                <br>
-                <br>
-                All the content broadcast by CitrusTV is written, directed, edited and produced entirely by students. The studio's promotions, advertising, finances, engineering, computer systems, operations and event planning are also all managed by volunteer students.
-                <br>
-                <br>
-                <br>
-                <a href="https://www.youtube.com/user/CitrusTV" style="text-decoration: none; color: black; padding: 10px; background-color: #add8e6; font-family: 'Neucha', cursive;" > Our Coverage</a>
-                </p>
+        <main>
+            <div class="jumbotron jumboheaderimg jumbotron-fluid">
+                <div class="main">
+                <h1 class="display-4" style="color: black; font-size: 45px;">About CitrusTV</h1>
+                <p class="lead" style="font-family: sans-serif; font-size: 18px;">CitrusTV is Syracuse University's entirely student-run TV studio, open to all majors with any level of experience at SU or SUNY-ESF. </p>
+                <hr class="my-4">
+                <p style="font-family: sans-serif; font-size: 15px;">All the content broadcast by CitrusTV is written, directed, edited and produced entirely by students. The studio's promotions, advertising, finances, engineering, computer systems, operations and event planning are also all managed by volunteer students.</p>
+                <a class="btn btn-lg" href="https://www.youtube.com/user/CitrusTV" role="button" style="color: black; background-color: #fda172; font-family: 'Farsan', cursive;">Our Coverage</a>
+                </div>
              </div>
         </main>  
         <section class="row">
-            <div class="head2">
-            <h2>Meet Our Executive Staff</h2>
-            <!-- this is the section which will contain all of the executive headshots-->
+            <div style="display: flex; width: 100%;">
+                <h2>Meet Our Executive Staff</h2>
+                <hr>
+                <!-- this is the section which will contain all of the executive headshots-->
             </div>
-            <section class="row" style="display: flex;">
-                <!-- this is the first row in the section. Each section containing the headshots will be a flex box-->
-                <div class="exec">
-                    <div class="exec-img">
-                        <img style="width: 100%; height: 100%;object-fit: cover;" src="media/exec/gm.jpg" alt="General Manager at CitrusTV"/>
+            <div class="row row-cols-1 row-cols-md-4">
+                <div class="col mb-4">
+                  <div class="card" style="border: none;">
+                    <img src="media/exec/gm.jpg" class="card-img-top" alt="General Manager at CitrusTV">
+                    <div class="card-body">
+                        <h3 class="card-title">Lilly Umana</h3>
+                        <h4 class="card-subtitle mb-2 text-muted" style="font-size: 20px;">General Manager</h4>
+                        <p class="card-text">
+                            Class of 2021
+                            <br>
+                            Hometown: 
+                            <br> 
+                            Pearl River, NY
+                        </p>
+                        <p> <a class="btn btn-lg" role="button" style="color: black; background-color: #add8e6; font-family: 'Farsan', cursive;" href="mailto:lumana@citrustv.net">Email Me!</a></p>
                     </div>
-                    <div class="exec-text">
-                        <h3>Lilly Umana</h3>
-                        <h4>General Manager</h4>
-                        <ul>
-                            <li>Class of 2021</li>
-                            <li>Hometown: <br> Pearl River, NY</li>
-                        </ul>
-                        <p> <a href="mailto:lumana@citrustv.net">Email Me!</a></p>
-                    </div>
+                  </div>
                 </div>
-                <div class="exec">
-                    <div class="exec-img">
-                        <img style="width: 100%; height: 100%;object-fit: cover;" src="media/exec/agm.jpg" alt="Associate General Manager at CitrusTV"/>
+                <div class="col mb-4">
+                    <div class="card" style="border: none;">
+                      <img src="media/exec/agm.jpg" class="card-img-top" alt="Associate General Manager at CitrusTV">
+                      <div class="card-body">
+                          <h3 class="card-title">Amber McElrath</h3>
+                          <h4 class="card-subtitle mb-2 text-muted" style="font-size: 20px;">Associate General Manager</h4>
+                          <p class="card-text">
+                              Class of 2021
+                              <br>
+                              Hometown: 
+                              <br> 
+                              Horsham, PA
+                          </p>
+                          <p> <a class="btn btn-lg" role="button" style="color: black; background-color: #add8e6; font-family: 'Farsan', cursive;" href="mailto:amcelrath@citrustv.net">Email Me!</a></p>
+                      </div>
                     </div>
-                    <div class="exec-text">
-                        <h3>Amber McElrath</h3>
-                        <h4>Associate General Manager</h4>
-                        <ul>
-                            <li>Class of 2021</li>
-                            <li>Hometown: <br> Horsham, PA</li>    
-                        </ul>
-                        <p> <a href="mailto:amcelrath@citrustv.net">Email Me!</a></p>
+                  </div>
+                  <div class="col mb-4">
+                    <div class="card" style="border: none;">
+                      <img src="media/exec/operations-manager.jpg" class="card-img-top" alt="Operations Manager at CitrusTV">
+                      <div class="card-body">
+                          <h3 class="card-title">Jason Wilborn</h3>
+                          <h4 class="card-subtitle mb-2 text-muted" style="font-size: 20px;">Operations Manager</h4>
+                          <p class="card-text">
+                              Class of 2021
+                              <br>
+                              Hometown: 
+                              <br> 
+                              Manchester, VT
+                          </p>
+                          <p> <a class="btn btn-lg" role="button" style="color: black; background-color: #add8e6; font-family: 'Farsan', cursive;" href="mailto:jwilborn@citrustv.net">Email Me!</a></p>
+                      </div>
                     </div>
+                  </div>
+                  <div class="col mb-4">
+                    <div class="card" style="border: none;">
+                      <img src="media/exec/news-director.jpg" class="card-img-top" alt="News Director at CitrusTV">
+                      <div class="card-body">
+                          <h3 class="card-title">Erin Lyons</h3>
+                          <h4 class="card-subtitle mb-2 text-muted" style="font-size: 20px;">News Director</h4>
+                          <p class="card-text">
+                              Class of 2021
+                              <br>
+                              Hometown: 
+                              <br> 
+                              Gary, IN
+                          </p>
+                          <p> <a class="btn btn-lg" role="button" style="color: black; background-color: #add8e6; font-family: 'Farsan', cursive;" href="mailto:aelyons@citrustv.net">Email Me!</a></p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="exec">
-                    <div class="exec-img">
-                        <img style="width: 100%; height: 100%;object-fit: cover;" src="media/exec/operations-manager.jpg" alt="Operations Manager at CitrusTV"/>
+                <div class="row row-cols-1 row-cols-md-4">
+                    <div class="col mb-4">
+                      <div class="card" style="border: none;">
+                        <img src="media/exec/sports-director.jpg" class="card-img-top" alt="Sports Director at CitrusTV">
+                        <div class="card-body">
+                            <h3 class="card-title">Will Shea</h3>
+                            <h4 class="card-subtitle mb-2 text-muted" style="font-size: 20px;">Sports Director</h4>
+                            <p class="card-text">
+                                Class of 2022
+                                <br>
+                                Hometown: 
+                                <br> 
+                                Mount Olive, NJ
+                            </p>
+                            <p> <a class="btn btn-lg" role="button" style="color: black; background-color: #add8e6; font-family: 'Farsan', cursive;" href="mailto:wshea@citrustv.net">Email Me!</a></p>
+                        </div>
+                      </div>
                     </div>
-                    <div class="exec-text">
-                        <h3>Jason Wilborn</h3>
-                        <h4>Operations Manager</h4>
-                        <ul>
-                            <li>Class of 2021</li>
-                            <li>Hometown: <br> Manchester, VT</li>
-                        </ul>
-                        <p> <a href="mailto:jwilborn@citrustv.net">Email Me!</a></p>
+                    <div class="col mb-4">
+                        <div class="card" style="border: none;">
+                          <img src="media/exec/entertainment-director.jpg" class="card-img-top" alt="Entertainment Director at CitrusTV">
+                          <div class="card-body">
+                              <h3 class="card-title">Liam Crowley</h3>
+                              <h4 class="card-subtitle mb-2 text-muted" style="font-size: 20px;">Entertainment Director</h4>
+                              <p class="card-text">
+                                  Class of 2022
+                                  <br>
+                                  Hometown: 
+                                  <br> 
+                                  Braintree, MA
+                              </p>
+                              <p> <a class="btn btn-lg" role="button" style="color: black; background-color: #add8e6; font-family: 'Farsan', cursive;" href="mailto:lcrowley@citrustv.net">Email Me!</a></p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col mb-4">
+                        <div class="card" style="border: none;">
+                          <img src="media/exec/digital-director.jpg" class="card-img-top" alt="Web and Digital Media Director at CitrusTV">
+                          <div class="card-body">
+                              <h3 class="card-title">Lucas Vogel</h3>
+                              <h4 class="card-subtitle mb-2 text-muted" style="font-size: 20px;">Digital Media Director</h4>
+                              <p class="card-text">
+                                  Class of 2023
+                                  <br>
+                                  Hometown: 
+                                  <br> 
+                                  Chicago, IL
+                                  <!--PICK UP FILLING IN INFORMATION HERE-->
+                              </p>
+                              <p> <a class="btn btn-lg" role="button" style="color: black; background-color: #add8e6; font-family: 'Farsan', cursive;" href="mailto:ljvogel@citrustv.net">Email Me!</a></p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col mb-4">
+                        <div class="card" style="border: none;">
+                          <img src="media/exec/social-director.jpg" class="card-img-top" alt="Social Media Director at CitrusTV">
+                          <div class="card-body">
+                              <h3 class="card-title">Alex King</h3>
+                              <h4 class="card-subtitle mb-2 text-muted" style="font-size: 20px;">Social Media Director</h4>
+                              <p class="card-text">
+                                  Class of 2022
+                                  <br>
+                                  Hometown: 
+                                  <br> 
+                                  Cresskill, NJ
+                              </p>
+                              <p> <a class="btn btn-lg" role="button" style="color: black; background-color: #add8e6; font-family: 'Farsan', cursive;" href="mailto:aking@citrustv.net">Email Me!</a></p>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                </div>
-                <div class="exec">
-                    <div class="exec-img">
-                        <img style="width: 100%; height: 100%;object-fit: cover;" src="media/exec/news-director.jpg" alt="News Director at CitrusTV"/>
-                    </div>
-                    <div class="exec-text">
-                        <h3>Erin Lyons</h3>
-                        <h4>News Director</h4>
-                        <ul>
-                            <li>Class of 2021</li>
-                            <li>Hometown: <br> Gary, IN</li>
-                        </ul>
-                        <p> <a href="mailto:aelyons@citrustv.net">Email Me!</a></p>
-                    </div>
-                </div>
+                    <div class="row row-cols-1 row-cols-md-4">
+                        <div class="col mb-4">
+                          <div class="card" style="border: none;">
+                            <img src="media/exec/alumni-relations.jpg" class="card-img-top" alt="Alumni Relations Director at CitrusTV">
+                            <div class="card-body">
+                                <h3 class="card-title">Katie Lane</h3>
+                                <h4 class="card-subtitle mb-2 text-muted" style="font-size: 20px;">Alumni Relations Director</h4>
+                                <p class="card-text">
+                                    Class of 2022
+                                    <br>
+                                    Hometown: 
+                                    <br> 
+                                    Hawley, PA
+                                </p>
+                                <p> <a class="btn btn-lg" role="button" style="color: black; background-color: #add8e6; font-family: 'Farsan', cursive;" href="mailto:klane@citrustv.net">Email Me!</a></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card" style="border: none;">
+                              <img src="media/exec/promotions-director.jpg" class="card-img-top" alt="Promotions Director at CitrusTV">
+                              <div class="card-body">
+                                  <h3 class="card-title">Lauren Rub</h3>
+                                  <h4 class="card-subtitle mb-2 text-muted" style="font-size: 20px;">Promotions Director</h4>
+                                  <p class="card-text">
+                                      Class of 2022
+                                      <br>
+                                      Hometown: 
+                                      <br> 
+                                      Miami, FL
+                                  </p>
+                                  <p> <a class="btn btn-lg" role="button" style="color: black; background-color: #add8e6; font-family: 'Farsan', cursive;" href="mailto:lrub@citrustv.net">Email Me!</a></p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col mb-4">
+                            <div class="card" style="border: none;">
+                              <img src="media/exec/programming-director.jpg" class="card-img-top" alt="Programming Director at CitrusTV">
+                              <div class="card-body">
+                                  <h3 class="card-title">Ricky Sayer</h3>
+                                  <h4 class="card-subtitle mb-2 text-muted" style="font-size: 20px;">Programming Director</h4>
+                                  <p class="card-text">
+                                      Class of 2021
+                                      <br>
+                                      Hometown: 
+                                      <br> 
+                                      Bryn Mawr, PA
+                                  </p>
+                                  <p> <a class="btn btn-lg" role="button" style="color: black; background-color: #add8e6; font-family: 'Farsan', cursive;" href="mailto:rickyrsayer@gmail.com">Email Me!</a></p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col mb-4">
+                            <div class="card" style="border: none;">
+                              <img src="media/exec/chief-engineer.jpg" class="card-img-top" alt="Chief Engineer at CitrusTV">
+                              <div class="card-body">
+                                  <h3 class="card-title">Cal Parker</h3>
+                                  <h4 class="card-subtitle mb-2 text-muted" style="font-size: 20px;">Chief Engineer</h4>
+                                  <p class="card-text">
+                                      Class of 2021
+                                      <br>
+                                      Hometown: 
+                                      <br> 
+                                      Groton, MA
+                                  </p>
+                                  <p> <a class="btn btn-lg" role="button" style="color: black; background-color: #add8e6; font-family: 'Farsan', cursive;" href="mailto:cparker@citrustv.net">Email Me!</a></p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
             </section>
-            <section class="row" style="display: flex;">
-                <!-- this is the second row in the section-->
-                <div class="exec">
-                    <div class="exec-img">
-                        <img style="width: 100%; height: 100%;object-fit: cover;" src="media/exec/sports-director.jpg" alt="Sports Director at CitrusTV"/>
-                    </div>
-                    <div class="exec-text">
-                        <h3>Will Shea</h3>
-                        <h4>Sports Director</h4>
-                        <ul>
-                            <li>Class of 2022</li>
-                            <li>Hometown: <br> Mount Olive, NJ</li>
-                        </ul>
-                        <p> <a href="mailto:wshea@citrustv.net">Email Me!</a></p>
-                    </div>
-                </div>
-                <div class="exec">
-                    <div class="exec-img">
-                        <img style="width: 100%; height: 100%;object-fit: cover;" src="media/exec/entertainment-director.jpg" alt="Entertainment Director at CitrusTV"/>
-                    </div>
-                    <div class="exec-text">
-                        <h3>Liam Crowley</h3>
-                        <h4>Entertainment Director</h4>
-                        <ul>
-                            <li>Class of 2022</li>
-                            <li>Hometown: <br> Braintree, MA</li>
-                        </ul>
-                        <p> <a href="mailto:lcrowley@citrustv.net">Email Me!</a></p>
-                    </div>
-                </div>
-                <div class="exec">
-                    <div class="exec-img">
-                        <img style="width: 100%; height: 100%;object-fit: cover;" src="media/exec/digital-director.jpg" alt="Web and Digital Media Director at CitrusTV"/>
-                    </div>
-                    <div class="exec-text">
-                        <h3>Lucas Vogel</h3>
-                        <h4>Digital Media Director</h4>
-                        <ul>
-                            <li>Class of 2023</li>
-                            <li>Hometown: <br> Chicago, IL</li>
-                        </ul>
-                        <p> <a href="mailto:ljvogel@citrustv.net">Email Me!</a></p>
-                    </div>
-                </div>
-                <div class="exec">
-                    <div class="exec-img">
-                        <img style="width: 100%; height: 100%;object-fit: cover;" src="media/exec/social-director.jpg" alt="Social Media Director at CitrusTV"/>
-                    </div>
-                    <div class="exec-text">
-                        <h3>Alex King</h3>
-                        <h4>Social Media Director</h4>
-                        <ul>
-                            <li>Class of 2022</li>
-                            <li>Hometown: <br> Cresskill, NJ</li>
-                        </ul>
-                        <p> <a href="mailto:aking@citrustv.net">Email Me!</a></p>
-                    </div>
-                </div>
-            </section>
-            <section class="row" style="display: flex;">
-                <!-- this is the third row in the section-->
-                <div class="exec">
-                    <div class="exec-img">
-                        <img style="width: 100%; height: 100%;object-fit: cover;" src="media/exec/alumni-relations.jpg" alt="Alumni Relations Director at CitrusTV"/>
-                    </div>
-                    <div class="exec-text">
-                        <h3>Katie Lane</h3>
-                        <h4>Alumni Relations Director</h4>
-                        <ul>
-                            <li>Class of 2022</li>
-                            <li>Hometown: <br> Hawley, PA</li>
-                        </ul>
-                        <p> <a href="mailto:klane@citrustv.net">Email Me!</a></p>
-                    </div>
-                </div>
-                <div class="exec">
-                    <div class="exec-img">
-                        <img style="width: 100%; height: 100%;object-fit: cover;" src="media/exec/promotions-director.jpg" alt="Promotions Director at CitrusTV"/>
-                    </div>
-                    <div class="exec-text">
-                        <h3>Lauren Rub</h3>
-                        <h4>Promotions Director</h4>
-                        <ul>
-                            <li>Class of 2022</li>
-                            <li>Hometown: <br> Miami, FL</li>
-                        </ul>
-                        <p> <a href="mailto:lrub@citrustv.net">Email Me!</a></p>
-                    </div>
-                </div>
-                <div class="exec">
-                    <div class="exec-img">
-                        <img style="width: 100%; height: 100%;object-fit: cover;" src="media/exec/programming-director.jpg" alt="Programming Director at CitrusTV"/>
-                    </div>
-                    <div class="exec-text">
-                        <h3>Ricky Sayer</h3>
-                        <h4>Programming Director</h4>
-                        <ul>
-                            <li>Class of 2021</li>
-                            <li>Hometown: <br> Bryn Mawr, PA</li>
-                        </ul>
-                        <p> <a href="mailto:rickyrsayer@gmail.com">Email Me!</a></p>
-                    </div>
-                </div>
-                <div class="exec">
-                    <div class="exec-img">
-                        <img style="width: 100%; height: 100%; object-fit: cover;" src="media/exec/chief-engineer.jpg" alt="Chief Engineer at CitrusTV"/>
-                    </div>
-                    <div class="exec-text">
-                        <h3>Cal Parker</h3>
-                        <h4>Chief Engineer</h4>
-                        <ul>
-                            <li>Class of 2021</li>
-                            <li>Hometown: <br> Groton, MA</li>
-                        </ul>
-                        <p> <a href="mailto:cparker@citrustv.net">Email Me!</a></p>
-                    </div>
-                </div>
-            </section>
-        </section>
-        <section class="row">
+        <section class="row" style="width: 100%">
             <!-- this starts the second entire section of the page-->
-        <div class="head2-coverage">
-        <h2><a href="https://www.youtube.com/user/CitrusTV" style="text-decoration: none; color: black;"> Check Out Our Coverage</a></h2>
-        </div>
-            <section class="row" style="display:flex; background: #add8e6; margin-top: 3em;">
+            <div style="display: flex; width: 100%;">
+                <h2><a href="https://www.youtube.com/user/CitrusTV" style="text-decoration: none; color: black;"> Check Out Our Coverage</a></h2>
+                <hr style="background: #fda172">
+            </div>
+            <section class="row" style="display:flex; background: #add8e6; margin-left: 1em; margin-top: 2em;
+            flex-wrap: wrap;">
                 <div class="coverage">
                     <div class="coverage-img">
                         <img style="width: 100%; height: 100%; object-fit: cover;" src="media/photos/news.jpg" alt="News Department"/>
@@ -254,22 +286,26 @@
         </section>
     <footer>
         <!-- The footer will be orange and at the bottom. This will contain all of the contact information-->
-    <div style="width: 80%;">
-        <h2 style="background: #fda172;">Contact Us</h2>        
-        <p style="padding: 10px;"> 
-            CitrusTV
-            <br>Robert B. Menschel Media Center
-            <br>316 Waverly Ave.
-            <br>Syracuse, NY 13244-3010
-            <br>Office Phone: 315.443.2041 | Newsroom: 315.443.1177
-        </p>
-        <a href="https://www.facebook.com/citrustv/" class="fa fa-facebook" style="text-decoration: none; color: black;"></a>
-        <a href="https://www.instagram.com/citrustv/?hl=en" class="fa fa-instagram" style="text-decoration: none; color: black;"></a>
-    </div>
-    <div style="width: 20%;">
-        <img class="footer" src="media/logos/footer.png" width="200" alt="CitrusTVLogo">
-    </div>
+        <div style="float:right;">
+            <img class="footer" src="media/logos/footer.png" width="200" alt="CitrusTVLogo">
+        </div>
+        <div>
+            <h2 style="margin-left: 1em; background: none;">Contact Us</h2>        
+            <p style="padding: 10px; margin-left: 2em;"> 
+                CitrusTV
+                <br>Robert B. Menschel Media Center
+                <br>316 Waverly Ave.
+                <br>Syracuse, NY 13244-3010
+                <br>Office Phone: 315.443.2041 | Newsroom: 315.443.1177
+            </p>
+            <a href="https://www.facebook.com/citrustv/" class="fa fa-facebook" style="text-decoration: none; color: black; margin-left: 2em;"></a>
+            <a href="https://www.instagram.com/citrustv/?hl=en" class="fa fa-instagram" style="text-decoration: none; color: black;"></a>
+        </div>
+        
     </footer>
     </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     </body>
 </html>
