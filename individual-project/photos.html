@@ -4,7 +4,25 @@
         <title>CitrusTV Banquet Photos</title>
         <link rel="stylesheet" type="text/css" href="style.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Farsan&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <style>
+            .jumboheaderimg{
+                background-image:  url("media/photos/awards.jpg");
+                background-size: cover;
+                color: black;
+                } 
+            div.main{
+                width: 50%;
+                background-color: rgba(255, 255, 255, 0.938);
+                border: #fda172;
+                border-style: solid;
+                border-width: 5px;
+                margin: 2em;
+                padding: 15px;
+                }
+        </style>
     </head>
     <body>
     <div class="page-container">
@@ -13,18 +31,24 @@
             <img class="logo" src="media/logos/CitrusTVLogo.png" alt="CitrusTVLogo" width="150"/>
             <nav>
                 <ul>
-                    <li><a href="https://amcelrat-su.github.io/ist263/individual-project/about-us.html">Home</a></li>
-                    <li><a href="https://amcelrat-su.github.io/ist263/individual-project/schedule.html">Schedule</a></li>
-                    <li><a href="https://amcelrat-su.github.io/ist263/individual-project/photos.html">Photos</a></li>
+                    <li><a href="https://amcelrat-su.github.io/ist263/individual-project/about-us.html" style="text-decoration: none;">Home</a></li>
+                    <li><a href="https://amcelrat-su.github.io/ist263/individual-project/schedule.html" style="text-decoration: none;">Schedule</a></li>
+                    <li><a href="https://amcelrat-su.github.io/ist263/individual-project/photos.html" style="text-decoration: none;">Photos</a></li>
                 </ul>
             </nav>
         </header>
         <!-- i didn't know how to insert a search bar and navigation, so i used the code we did in class on the last homework-->
         <main>
+            <div class="jumbotron jumboheaderimg jumbotron-fluid">
+                <div class="main">
+                    <h1 class="display-4" style="color: black; font-size: 45px;">Banquet Photos</h1>
+                    <p class="lead" style="font-family: sans-serif; font-size: 18px;">Check out some highlights from our 50th Anniversary Banquet! These photos show current members and alumni having a great time</p>
+                    <hr class="my-4">
+                    <a href="https://www.facebook.com/pg/citrustv/photos/?tab=album&album_id=10157002531757095" class="btn btn-lg my-2"style="color: black; background-color: #fda172; font-family: 'Farsan', cursive;">View All Photos</a>
+                </div>
+            </div>
+        </main>
         <section class="row"> 
-        <div class="head2-coverage">
-        <h1 style="background: white; width: fit-content; padding-right: 10px;">Banquet Photos</h1>
-        </div> 
         <!--I used my a website to help me create a more interesting photo page then a slider-->
         <!-- Slideshow container -->
         <div class="columns">
@@ -75,26 +99,28 @@
             </div>     
         <!-- I followed along with the code on another website and a youtube video to create these polaroid style images. I know you recommended I do something other than a slider.-->
         </section>
-        </main>
         <footer>
             <!-- The footer will be orange and at the bottom. This will contain all of the contact information-->
-        <div style="width: 80%;">
-            <h2 style="background: #fda172;">Contact Us</h2>        
-            <p style="padding: 10px;"> 
-                CitrusTV
-                <br>Robert B. Menschel Media Center
-                <br>316 Waverly Ave.
-                <br>Syracuse, NY 13244-3010
-                <br>Office Phone: 315.443.2041 | Newsroom: 315.443.1177
-            </p>
-            <a href="https://www.facebook.com/citrustv/" class="fa fa-facebook" style="text-decoration: none; color: black;"></a>
-            <a href="https://www.instagram.com/citrustv/?hl=en" class="fa fa-instagram" style="text-decoration: none; color: black;"></a>
-        </div>
-        <div style="width: 20%;">
-            <img class="footer" src="media/logos/footer.png" width="200" alt="CitrusTVLogo">
-        </div>
+            <div style="float:right;">
+                <img class="footer" src="media/logos/footer.png" width="200" alt="CitrusTVLogo">
+            </div>
+            <div>
+                <h2 style="margin-left: 1em; background: none;">Contact Us</h2>        
+                <p style="padding: 10px; margin-left: 2em;"> 
+                    CitrusTV
+                    <br>Robert B. Menschel Media Center
+                    <br>316 Waverly Ave.
+                    <br>Syracuse, NY 13244-3010
+                    <br>Office Phone: 315.443.2041 | Newsroom: 315.443.1177
+                </p>
+                <a href="https://www.facebook.com/citrustv/" class="fa fa-facebook" style="text-decoration: none; color: black; margin-left: 2em;"></a>
+                <a href="https://www.instagram.com/citrustv/?hl=en" class="fa fa-instagram" style="text-decoration: none; color: black;"></a>
+            </div>
         </footer>
     </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     </body>
 </html>
             
