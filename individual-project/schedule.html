@@ -4,29 +4,53 @@
         <title>CitrusTV Schedule</title>
         <link rel="stylesheet" type="text/css" href="style.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Farsan&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     </head>
     <body>
     <div class="page-container">
+    <style>
+    .jumboheaderimg{
+        background-image:  url("media/photos/50th.jpg");
+        background-size: cover;
+        color: black;
+        } 
+    div.main{
+        width: 50%;
+        background-color: rgba(255, 255, 255, 0.938);
+        border: #add8e6;
+        border-style: solid;
+        border-width: 5px;
+        margin: 2em;
+        padding: 15px;
+        }
+    </style>
         <header>
             <!-- the body will all be  under one page container that contains all of the header and main items-->
             <img class="logo" src="media/logos/CitrusTVLogo.png" alt="CitrusTVLogo" width="150"/>
             <nav>
                 <ul>
-                    <li><a href="https://amcelrat-su.github.io/ist263/individual-project/about-us.html">Home</a></li>
-                    <li><a href="https://amcelrat-su.github.io/ist263/individual-project/schedule.html">Schedule</a></li>
-                    <li><a href="https://amcelrat-su.github.io/ist263/individual-project/photos.html">Photos</a></li>
+                    <li><a href="https://amcelrat-su.github.io/ist263/individual-project/about-us.html" style="text-decoration: none;">Home</a></li>
+                    <li><a href="https://amcelrat-su.github.io/ist263/individual-project/schedule.html" style="text-decoration: none;">Schedule</a></li>
+                    <li><a href="https://amcelrat-su.github.io/ist263/individual-project/photos.html"style="text-decoration: none;">Photos</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <h1>Alumni Weekend</h1>
-            <img src="media/photos/50th.png" alt="CitrusTV 50th anniversary logo" width="100%" />
+        <div class="jumbotron jumboheaderimg jumbotron-fluid">
+            <div class="main">
+            <h1 class="display-4" style="color: black; font-size: 45px;">Alumni Weekend</h1>
+            <p class="lead" style="font-family: sans-serif; font-size: 18px;">Join us in celebrating our wonderful alumni and another fantastic year of student run television</p>
+            <hr class="my-4">
+            </div>
+         </div>
         </main>
         <section class="row">
-            <div class="head2">
-            <h2>Schedule</h2>
-            </div>    
+            <div style="display: flex; width: 100%;">
+                <h2>Schedule</h2>
+                <hr style="background: #fda172"> 
+            </div>
         </section>
         <section class="row" style="display: flex; width: 100%;">
             <div class="schedule">
@@ -51,60 +75,64 @@
             </div>
         </section>
         <section class="row">
-            <div class="head2-coverage">
-            <h2>List of Events</h2>
+            <div style="display: flex; width: 100%;">
+                <h2>List of Events</h2>
+                <hr>
             </div>
-            <section class="row" style="display:flex;">
-                <div class="event">
-                    <div>
-                      <h3>News Live at 6</h3>  
+                <section class="row" style="display:flex;">
+                    <div class="event">
+                        <div>
+                          <h3>News Live at 6</h3>  
+                        </div>
+                        <div>
+                            <img src="media/photos/newsevent.jpg" alt="CitrusTV News Live at 6" style="width: 100%; height: 100%; object-fit: cover;"/>
+                            <!--I'll insert an actual image from the event here-->
+                            <p style="padding: 20px; word-wrap: normal;">Join us on Friday April 3rd at 6:00pm for our News Live at 6 show! You can run a crew position or just sit back and watch.</p>
+                        </div>
                     </div>
-                    <div>
-                        <img src="media/photos/newsevent.jpg" alt="CitrusTV News Live at 6" style="width: 100%; height: 100%; object-fit: cover;"/>
-                        <!--I'll insert an actual image from the event here-->
-                        <p style="padding: 10px; word-wrap: normal;">Join us on Friday April 3rd at 6:00pm for our News Live at 6 show!</p>
+                    <div class="event">
+                        <div>
+                          <h3>Alumni Panel</h3>  
+                        </div>
+                        <div>
+                            <img src="media/photos/alumni.jpeg" alt="CitrusTV Alumni Panel" style="width: 100%; height: 100%; object-fit: cover;"/>
+                            <!--I'll insert an actual image from the event here-->
+                            <p style="padding: 20px; word-wrap: normal;">Join us on Saturday April 4th for our Alumni Panel! The panel will feature our keynote speaker Matthew Berry</p>
+                        </div>
                     </div>
-                </div>
-                <div class="event">
-                    <div>
-                      <h3>Alumni Panel</h3>  
+                    <div class="event">
+                        <div>
+                          <h3>Alumni Banquet</h3>  
+                        </div>
+                        <div>
+                            <img src="media/photos/banquet.jpg" alt="CitrusTV Alumni Banquet" style="width: 100%; height: 100%; object-fit: cover;"/>
+                            <!--I'll insert an actual image from the event here-->
+                            <p style="padding: 20px; word-wrap: normal;">Join us on Saturday April 4th for our Alumni Banquet! The banquet will feature awards, food, and so much more!</p>
+                        </div>
                     </div>
-                    <div>
-                        <img src="media/photos/alumni.jpeg" alt="CitrusTV Alumni Panel" style="width: 100%; height: 100%; object-fit: cover;"/>
-                        <!--I'll insert an actual image from the event here-->
-                        <p style="padding: 10px; word-wrap: normal;">Join us on Saturday April 4th for our Alumni Panel! Alumni work in various different media organizations and the panel will feature our keynote speaker Matthew Berry</p>
-                    </div>
-                </div>
-                <div class="event">
-                    <div>
-                      <h3>Alumni Banquet</h3>  
-                    </div>
-                    <div>
-                        <img src="media/photos/banquet.jpg" alt="CitrusTV Alumni Banquet" style="width: 100%; height: 100%; object-fit: cover;"/>
-                        <!--I'll insert an actual image from the event here-->
-                        <p style="padding: 10px; word-wrap: normal;">Join us on Saturday April 4th for our Alumni Banquet! The banquet will feature awards, food, and so much more!</p>
-                    </div>
-                </div>
+                </section> 
             </section> 
-        </section>
         <footer>
             <!-- The footer will be orange and at the bottom. This will contain all of the contact information-->
-        <div style="width: 80%;">
-            <h2 style="background: #fda172;">Contact Us</h2>        
-            <p style="padding: 10px;"> 
-                CitrusTV
-                <br>Robert B. Menschel Media Center
-                <br>316 Waverly Ave.
-                <br>Syracuse, NY 13244-3010
-                <br>Office Phone: 315.443.2041 | Newsroom: 315.443.1177
-            </p>
-            <a href="https://www.facebook.com/citrustv/" class="fa fa-facebook" style="text-decoration: none; color: black;"></a>
-            <a href="https://www.instagram.com/citrustv/?hl=en" class="fa fa-instagram" style="text-decoration: none; color: black;"></a>
-        </div>
-        <div style="width: 20%;">
-            <img class="footer" src="media/logos/footer.png" width="200" alt="CitrusTVLogo">
-        </div>
+            <div style="float:right;">
+                <img class="footer" src="media/logos/footer.png" width="200" alt="CitrusTVLogo">
+            </div>
+            <div>
+                <h2 style="margin-left: 1em; background: none;">Contact Us</h2>        
+                <p style="padding: 10px; margin-left: 2em;"> 
+                    CitrusTV
+                    <br>Robert B. Menschel Media Center
+                    <br>316 Waverly Ave.
+                    <br>Syracuse, NY 13244-3010
+                    <br>Office Phone: 315.443.2041 | Newsroom: 315.443.1177
+                </p>
+                <a href="https://www.facebook.com/citrustv/" class="fa fa-facebook" style="text-decoration: none; color: black; margin-left: 2em;"></a>
+                <a href="https://www.instagram.com/citrustv/?hl=en" class="fa fa-instagram" style="text-decoration: none; color: black;"></a>
+            </div>
         </footer>
     </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     </body>
-    
+    </html>
