@@ -110,6 +110,9 @@ div.schedule{
 }
 th{
     text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Farsan', cursive;
 }
 td{ 
     border-collapse: collapse;
