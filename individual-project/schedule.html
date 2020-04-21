@@ -2,10 +2,10 @@
 <html lang="en">
     <head>
         <title>CitrusTV Schedule</title>
-        <link rel="stylesheet" type="text/css" href="style.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Farsan&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <style>
         .jumboheaderimg{
@@ -29,13 +29,28 @@
         <header>
             <!-- the body will all be  under one page container that contains all of the header and main items-->
             <img class="logo" src="media/logos/CitrusTVLogo.png" alt="CitrusTVLogo" width="150"/>
-            <nav>
-                <ul>
-                    <li><a href="https://amcelrat-su.github.io/ist263/individual-project/about-us.html" style="text-decoration: none;">Home</a></li>
-                    <li><a href="https://amcelrat-su.github.io/ist263/individual-project/schedule.html" style="text-decoration: none;">Schedule</a></li>
-                    <li><a href="https://amcelrat-su.github.io/ist263/individual-project/photos.html" style="text-decoration: none;">Photos</a></li>
-                </ul>
-            </nav>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="about-us.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="schedule.html">Schedule<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="photos.html">Media</a>
+                      </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline my-2 my-sm-0" type="submit" style="background-color: #fda172;">Search</button>
+                  </form>
+                </div>
+              </nav>
         </header>
         <main>
         <div class="jumbotron jumboheaderimg jumbotron-fluid">
@@ -43,6 +58,7 @@
             <h1 class="display-4" style="color: black; font-size: 45px;">Alumni Weekend</h1>
             <p class="lead" style="font-family: sans-serif; font-size: 18px;">Join us in celebrating our wonderful alumni and another fantastic year of student run television</p>
             <hr class="my-4">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSelVJrgCFV9BoV-fRQ-GAH7kLK57mcbUrlEu898V23Xpj8DlQ/viewform?usp=sf_link" class="btn btn-lg my-2" style="color: black; background-color: #add8e6; font-family: 'Farsan', cursive;">Register Now</a>
             </div>
          </div>
         </main>
@@ -52,26 +68,46 @@
                 <hr style="background: #fda172"> 
             </div>
         </section>
-        <section class="row" style="display: flex; width: 100%;">
+        <section class="row">
             <div class="schedule">
-                <h3>April 3rd</h3>
-                <ul>
-                    <li><i><b>6:00 pm</b></i> | News Live at 6 Show</li>
-                </ul>
-            </div>
-            <div class="schedule">
-                <h3>April 4th</h3>
-                <ul>
-                    <li><i><b>Noon</b></i> | Brunch</li>
-                    <li><i><b>2:00 pm</b></i> | Alumni Panel</li>
-                    <li><i><b>7:00 pm</b></i> | 50th Anniversary Banquet</li>
-                </ul>
-            </div>
-            <div class="schedule">
-                <h3>April 5th</h3>
-                <ul>
-                    <li><i><b>Noon</b></i> | Sign the alumni wall!</li>
-                </ul>
+                <table>
+                    <tr>
+                        <th><h3>Time</h3></th>
+                        <th><h3>April 3rd</h3></th>
+                        <th><h3>April 4th</h3></th>
+                        <th><h3>April 5th</h3></th>
+                    </tr>
+                    <tr class="odd">
+                        <td><b>Noon</b></td>
+                        <td></td>
+                        <td>Brunch</td>
+                        <td>Sign the alumni wall!</td>
+                    </tr>
+                    <tr class="even">
+                        <td><b>2:00 pm</b></td>
+                        <td></td>
+                        <td>Alumni Panel</td>
+                        <td></td>
+                    </tr>
+                    <tr class="odd">
+                        <td><b>4:00 pm</b></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="even">
+                        <td><b>6:00 pm</b></td>
+                        <td>News Live at 6 Show</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="odd">
+                        <td><b>8:00 pm</b></td>
+                        <td></td>
+                        <td>50th Anniversary Banquet</td>
+                        <td></td>
+                    </tr>
+                  </table>
             </div>
         </section>
         <section class="row">
@@ -114,9 +150,6 @@
             </section> 
         <footer>
             <!-- The footer will be orange and at the bottom. This will contain all of the contact information-->
-            <div style="float:right;">
-                <img class="footer" src="media/logos/footer.png" width="200" alt="CitrusTVLogo">
-            </div>
             <div>
                 <h2 style="margin-left: 1em; background: none;">Contact Us</h2>        
                 <p style="padding: 10px; margin-left: 2em;"> 

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>CitrusTV Banquet Photos</title>
-        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <title>CitrusTV Banquet Media</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Farsan&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <style>
             .jumboheaderimg{
@@ -29,32 +29,52 @@
         <header>
             <!-- the body will all be  under one page container that contains all of the header and main items-->
             <img class="logo" src="media/logos/CitrusTVLogo.png" alt="CitrusTVLogo" width="150"/>
-            <nav>
-                <ul>
-                    <li><a href="https://amcelrat-su.github.io/ist263/individual-project/about-us.html" style="text-decoration: none;">Home</a></li>
-                    <li><a href="https://amcelrat-su.github.io/ist263/individual-project/schedule.html" style="text-decoration: none;">Schedule</a></li>
-                    <li><a href="https://amcelrat-su.github.io/ist263/individual-project/photos.html" style="text-decoration: none;">Photos</a></li>
-                </ul>
-            </nav>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="about-us.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="schedule.html">Schedule</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="photos.html">Media<span class="sr-only">(current)</span></a>
+                      </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline my-2 my-sm-0" type="submit" style="background-color: #fda172;">Search</button>
+                  </form>
+                </div>
+              </nav>
         </header>
         <!-- i didn't know how to insert a search bar and navigation, so i used the code we did in class on the last homework-->
         <main>
             <div class="jumbotron jumboheaderimg jumbotron-fluid">
                 <div class="main">
-                    <h1 class="display-4" style="color: black; font-size: 45px;">Banquet Photos</h1>
-                    <p class="lead" style="font-family: sans-serif; font-size: 18px;">Check out some highlights from our 50th Anniversary Banquet! These photos show current members and alumni having a great time</p>
+                    <h1 class="display-4" style="color: black; font-size: 45px;">Banquet Media</h1>
+                    <p class="lead" style="font-family: sans-serif; font-size: 18px;">Check out some highlights from our 50th Anniversary Banquet! These photos and videos show current members and alumni having a great time</p>
                     <hr class="my-4">
                     <a href="https://www.facebook.com/pg/citrustv/photos/?tab=album&album_id=10157002531757095" class="btn btn-lg my-2" style="color: black; background-color: #fda172; font-family: 'Farsan', cursive;">View All Photos</a>
                 </div>
             </div>
         </main>
         <section class="row"> 
+        <div style="display: flex; width: 100%;">
+            <h2>Photos</h2>
+            <hr>
+            <!-- this is the section which will contain all of the executive headshots-->
+        </div>
         <!--I used my a website to help me create a more interesting photo page then a slider-->
         <!-- Slideshow container -->
         <div class="columns">
             <figure>
             <img src="media/photos/slide-1.jpg" alt="Women on the CitrusTV Executive Staff"/>
-              <figcaption>The women of the CitrusTV Executive Staff</figcaption>
+              <figcaption>The women of the CitrusTV Executive Staff celebrate another fantastic year of CitrusTV</figcaption>
               </figure>
               
               <figure>
@@ -64,17 +84,17 @@
               
             <figure>
               <img src="media/photos/slide-3.jpg" alt="Former AGM Lilia Wood celebrates with the current AGM Amber McElrath"/>
-              <figcaption>Former AGM Lilia Wood celebrates with the current AGM Amber McElrath</figcaption>
+              <figcaption>Former Associate General Manager Lilia Wood celebrates with the current AGM Amber McElrath</figcaption>
               </figure>
             
               <figure>
               <img src="media/photos/slide-4.jpg" alt="CitrusTV Members get ready to party">
-              <figcaption>Some CitrusTV members get ready to party</figcaption>
+              <figcaption>Some CitrusTV members get ready to party and celebrate a year of accomplishments</figcaption>
               </figure>
               
              <figure>
                <img src="media/photos/slide-5.jpg" alt="Best friends Julia and Lilly pose for the camera">
-              <figcaption>Best friends Julia and Lilly pose for the camera</figcaption>
+              <figcaption>Best friends Julia Kelly and Lilly Umana pose for the camera</figcaption>
               </figure>
               
              <figure>
@@ -99,11 +119,42 @@
             </div>     
         <!-- I followed along with the code on another website and a youtube video to create these polaroid style images. I know you recommended I do something other than a slider.-->
         </section>
+        <section class="row">
+          <div style="display: flex; width: 100%;">
+            <h2>Videos</h2>
+            <hr style="background: #fda172"> 
+        </div>
+        </section>
+        <section class="row">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <iframe class="d-block" src="https://www.youtube.com/embed/7FJN_dsCrE4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+              </div>
+              <div class="carousel-item">
+                <iframe class="d-block" src="https://www.youtube.com/embed/DhrWS_hdo9Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="carousel-item">
+                <iframe class="d-block" src="https://www.youtube.com/embed/r14CwL4B_go?" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+      </section>
         <footer>
             <!-- The footer will be orange and at the bottom. This will contain all of the contact information-->
-            <div style="float:right;">
-                <img class="footer" src="media/logos/footer.png" width="200" alt="CitrusTVLogo">
-            </div>
             <div>
                 <h2 style="margin-left: 1em; background: none;">Contact Us</h2>        
                 <p style="padding: 10px; margin-left: 2em;"> 

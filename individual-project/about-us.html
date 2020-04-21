@@ -2,10 +2,10 @@
 <html lang="en">
     <head>
         <title>CitrusTV About Us</title>
-        <link rel="stylesheet" type="text/css" href="style.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Farsan&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     </head>
     <body>
@@ -13,13 +13,28 @@
         <header>
             <!-- the body will all be  under one page container that contains all of the header and main items-->
             <img class="logo" src="media/logos/CitrusTVLogo.png" alt="CitrusTVLogo" width="150"/>
-            <nav>
-                <ul>
-                    <li><a href="https://amcelrat-su.github.io/ist263/individual-project/about-us.html" style="text-decoration: none;">Home</a></li>
-                    <li><a href="https://amcelrat-su.github.io/ist263/individual-project/schedule.html" style="text-decoration: none;">Schedule</a></li>
-                    <li><a href="https://amcelrat-su.github.io/ist263/individual-project/photos.html" style="text-decoration: none;">Photos</a></li>
-                </ul>
-            </nav>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="about-us.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="schedule.html">Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="photos.html">Media</a>
+                      </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline my-2 my-sm-0" type="submit" style="background-color: #fda172;">Search</button>
+                  </form>
+                </div>
+              </nav>
         </header>
         <main>
             <div class="jumbotron jumboheaderimg jumbotron-fluid">
@@ -31,16 +46,18 @@
                 <a class="btn btn-lg" href="https://www.youtube.com/user/CitrusTV" role="button" style="color: black; background-color: #fda172; font-family: 'Farsan', cursive;">Our Coverage</a>
                 </div>
              </div>
-        </main>  
+        </main>
         <section class="row">
+        <div class="row">
             <div style="display: flex; width: 100%;">
                 <h2>Meet Our Executive Staff</h2>
                 <hr>
                 <!-- this is the section which will contain all of the executive headshots-->
             </div>
             <div class="row row-cols-1 row-cols-md-4">
+                <div class="col-sm-12 col-md-6 col-lg-3">
                 <div class="col mb-4">
-                  <div class="card" style="border: none;">
+                  <div class="card">
                     <img src="media/exec/gm.jpg" class="card-img-top" alt="General Manager at CitrusTV">
                     <div class="card-body">
                         <h3 class="card-title">Lilly Umana</h3>
@@ -56,6 +73,8 @@
                     </div>
                   </div>
                 </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
                 <div class="col mb-4">
                     <div class="card" style="border: none;">
                       <img src="media/exec/agm.jpg" class="card-img-top" alt="Associate General Manager at CitrusTV">
@@ -73,6 +92,8 @@
                       </div>
                     </div>
                   </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
                   <div class="col mb-4">
                     <div class="card" style="border: none;">
                       <img src="media/exec/operations-manager.jpg" class="card-img-top" alt="Operations Manager at CitrusTV">
@@ -90,6 +111,8 @@
                       </div>
                     </div>
                   </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
                   <div class="col mb-4">
                     <div class="card" style="border: none;">
                       <img src="media/exec/news-director.jpg" class="card-img-top" alt="News Director at CitrusTV">
@@ -108,7 +131,9 @@
                     </div>
                   </div>
                 </div>
+            </div>
                 <div class="row row-cols-1 row-cols-md-4">
+                    <div class="col-sm-12 col-md-6 col-lg-3">
                     <div class="col mb-4">
                       <div class="card" style="border: none;">
                         <img src="media/exec/sports-director.jpg" class="card-img-top" alt="Sports Director at CitrusTV">
@@ -126,6 +151,8 @@
                         </div>
                       </div>
                     </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
                     <div class="col mb-4">
                         <div class="card" style="border: none;">
                           <img src="media/exec/entertainment-director.jpg" class="card-img-top" alt="Entertainment Director at CitrusTV">
@@ -143,6 +170,8 @@
                           </div>
                         </div>
                       </div>
+                    </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
                       <div class="col mb-4">
                         <div class="card" style="border: none;">
                           <img src="media/exec/digital-director.jpg" class="card-img-top" alt="Web and Digital Media Director at CitrusTV">
@@ -161,6 +190,8 @@
                           </div>
                         </div>
                       </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
                       <div class="col mb-4">
                         <div class="card" style="border: none;">
                           <img src="media/exec/social-director.jpg" class="card-img-top" alt="Social Media Director at CitrusTV">
@@ -179,7 +210,9 @@
                         </div>
                       </div>
                     </div>
+                </div>
                     <div class="row row-cols-1 row-cols-md-4">
+                        <div class="col-sm-12 col-md-6 col-lg-3">
                         <div class="col mb-4">
                           <div class="card" style="border: none;">
                             <img src="media/exec/alumni-relations.jpg" class="card-img-top" alt="Alumni Relations Director at CitrusTV">
@@ -197,6 +230,8 @@
                             </div>
                           </div>
                         </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
                         <div class="col mb-4">
                             <div class="card" style="border: none;">
                               <img src="media/exec/promotions-director.jpg" class="card-img-top" alt="Promotions Director at CitrusTV">
@@ -214,6 +249,8 @@
                               </div>
                             </div>
                           </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-3">
                           <div class="col mb-4">
                             <div class="card" style="border: none;">
                               <img src="media/exec/programming-director.jpg" class="card-img-top" alt="Programming Director at CitrusTV">
@@ -231,6 +268,8 @@
                               </div>
                             </div>
                           </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-3">
                           <div class="col mb-4">
                             <div class="card" style="border: none;">
                               <img src="media/exec/chief-engineer.jpg" class="card-img-top" alt="Chief Engineer at CitrusTV">
@@ -249,8 +288,9 @@
                             </div>
                           </div>
                         </div>
+                    </div>
             </section>
-        <section class="row" style="width: 100%">
+        <section class="row" style="width: 100%; margin-top: 2em;">
             <!-- this starts the second entire section of the page-->
             <div style="display: flex; width: 100%;">
                 <h2><a href="https://www.youtube.com/user/CitrusTV" style="text-decoration: none; color: black;"> Check Out Our Coverage</a></h2>
@@ -286,9 +326,6 @@
         </section>
     <footer>
         <!-- The footer will be orange and at the bottom. This will contain all of the contact information-->
-        <div style="float:right;">
-            <img class="footer" src="media/logos/footer.png" width="200" alt="CitrusTVLogo">
-        </div>
         <div>
             <h2 style="margin-left: 1em; background: none;">Contact Us</h2>        
             <p style="padding: 10px; margin-left: 2em;"> 
@@ -301,7 +338,6 @@
             <a href="https://www.facebook.com/citrustv/" class="fa fa-facebook" style="text-decoration: none; color: black; margin-left: 2em;"></a>
             <a href="https://www.instagram.com/citrustv/?hl=en" class="fa fa-instagram" style="text-decoration: none; color: black;"></a>
         </div>
-        
     </footer>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
